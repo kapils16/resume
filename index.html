@@ -3,52 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Kapil Kumar Sinha | Interactive CV</title>
+    <title>Dr. Kapil Kumar Sinha | CV</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .sidebar-link:hover { color: #f97316; }
+        .accent-border { border-left: 4px solid #f97316; }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
+<body class="bg-zinc-950 text-slate-200">
 
-    <header class="h-screen flex flex-col justify-center items-center bg-white px-6 text-center">
-        <h1 class="text-4xl md:text-6xl font-bold text-slate-800">Dr. Kapil Kumar Sinha</h1>
-        <p class="mt-4 text-xl text-blue-600 font-medium">Ph.D., IIT Roorkee | Assistant Professor</p>
-        <p class="mt-2 text-slate-500 max-w-xl">Specializing in Thermal Comfort, Energy Efficiency, and Human-Centric Design.</p>
-        <div class="mt-8 space-x-4">
-            <a href="#experience" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition">View Experience</a>
-            <a href="resume.pdf" class="border border-slate-300 px-6 py-3 rounded-md hover:bg-slate-100 transition">Download ATS CV</a>
+    <aside class="hidden md:flex fixed left-0 top-0 h-screen w-64 flex-col bg-zinc-900 border-r border-zinc-800 p-8">
+        <div class="mb-10">
+            <h1 class="text-2xl font-bold text-orange-500">KAPIL SINHA</h1>
+            <p class="text-xs text-slate-400 uppercase tracking-widest mt-1">Ph.D. | Building Science</p>
         </div>
-    </header>
-
-    <section class="py-16 bg-slate-100 px-6">
-        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-center">
-            <div class="bg-white p-6 rounded-xl shadow-sm">
-                <div class="text-3xl mb-2">📜</div>
-                <h3 class="font-bold">Patent Holder</h3>
-                <p class="text-sm text-slate-600">Human Thermal Stress Assessment Wearable Kit (No. 566975)</p>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm">
-                <div class="text-3xl mb-2">🌍</div>
-                <h3 class="font-bold">Global Scholar</h3>
-                <p class="text-sm text-slate-600">Visiting Scholar at University of Bath, UK (2022)</p>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm">
-                <div class="text-3xl mb-2">🏛️</div>
-                <h3 class="font-bold">WAF Finalist</h3>
-                <p class="text-sm text-slate-600">World Architecture Festival Finalist (Singapore, 2014)</p>
-            </div>
+        <nav class="flex flex-col space-y-4 font-medium text-slate-400">
+            <a href="#about" class="sidebar-link transition">About</a>
+            <a href="#education" class="sidebar-link transition">Education</a>
+            <a href="#experience" class="sidebar-link transition">Experience</a>
+            <a href="#research" class="sidebar-link transition">Research & Patent</a>
+            <a href="#skills" class="sidebar-link transition">Technical Skills</a>
+            <a href="#publications" class="sidebar-link transition">Publications</a>
+        </nav>
+        <div class="mt-auto">
+            <a href="resume.pdf" class="block w-full text-center py-2 px-4 border border-orange-500 text-orange-500 rounded hover:bg-orange-500 hover:text-white transition text-sm">Download PDF</a>
         </div>
-    </section>
+    </aside>
 
-    <section class="py-20 px-6 max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-10 border-l-4 border-blue-600 pl-4">Technical Expertise</h2>
-        <div class="flex flex-wrap gap-3">
-            <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm">Python</span>
-            <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm">EnergyPlus</span>
-            <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm">AnyLogic</span>
-            <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm">Rhino-Grasshopper</span>
-            <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm">BIM (Revit/ArchiCAD)</span>
-            <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm">Arduino Prototyping</span>
+    <main class="md:ml-64 p-8 md:p-16 max-w-5xl">
+        
+        <section id="about" class="mb-20">
+            <h2 class="text-orange-500 font-bold tracking-tighter text-sm mb-2">RESEARCH PHILOSOPHY</h2>
+            <p class="text-3xl md:text-4xl font-semibold text-white leading-tight mb-6">
+                Bridging architectural tradition and technology through <span class="text-orange-500">interdisciplinary innovation.</span>
+            </p>
+            <p class="text-slate-400 max-w-2xl leading-relaxed">
+                As a researcher committed to interdisciplinary innovation, I approach challenges from multiple vantage points to develop practical solutions[cite: 7]. 
+                During my PhD, when faced with a lack of sensors for skin temperature, I expanded into electronics to design and build a custom low-cost sensing kit[cite: 8, 9].
+            </p>
+        </section>
+
+        <section id="education" class="mb-20">
+            <h3 class="text-2xl font-bold text-white mb-8">Education</h3>
+            <div class="space-y-8">
+                <div class="accent-border pl-6">
+                    <h4 class="text-lg font-bold text-orange-500">Ph.D. in Architecture and Planning</h4>
+                    <p class="text-white">Indian Institute of Technology Roorkee [cite: 13]</p>
+                    <p class="text-sm text-slate-500 italic">2018 — 2024 [cite: 13]</p>
+                    <p class="text-sm mt-2 text-slate-400">Thesis: "Studies on transient thermo-physiological response of passengers in airport terminal buildings." [cite: 15]</p>
+                </div>
+                <div class="accent-border pl-6 border-zinc-700">
+                    <h4 class="text-lg font-bold">M.Tech in Transportation Systems</h4>
+                    <p class="text-white">IIT Roorkee | CGPA: 9.06 [cite: 22, 25]</p>
+                    <p class="text-sm text-slate-500 italic">2015 — 2017 [cite: 22]</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-20 bg-zinc-900 p-8 rounded-lg border border-zinc-800">
+            <h3 class="text-2xl font-bold text-white mb-6">Current Role</h3>
+            <div>
+                <h4 class="text-xl font-bold text-orange-500">Assistant Professor</h4>
+                <p class="text-white">Chandigarh University, University Institute of Architecture [cite: 29, 31]</p>
+                <p class="text-sm text-slate-500 italic">July 2024 — Present [cite: 30]</p>
+            </div>
+        </section>
+
+        <section id="research" class="mb-20">
+            <h3 class="text-2xl font-bold text-white mb-8">Research & Patent</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-6 bg-orange-500/10 border border-orange-500/20 rounded-lg">
+                    <span class="text-orange-500 font-bold text-xs">PATENT NO. 566975</span>
+                    <h4 class="text-white font-bold mt-2">Human Thermal Stress Assessment Kit</h4>
+                    <p class="text-sm text-slate-400 mt-2">Developed a wearable device and method for real-time assessment.</p>
+                </div>
+                <div class="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
+                    <span class="text-orange-500 font-bold text-xs">CREST BURSARY 2022</span>
+                    <h4 class="text-white font-bold mt-2">University of Bath, UK</h4>
+                    <p class="text-sm text-slate-400 mt-2">Research stay evaluating thermo-physiological responses in terminal buildings[cite: 18, 52, 53].</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-20">
+            <h3 class="text-2xl font-bold text-white mb-8">Technical Proficiency</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-zinc-800 rounded-full text-xs border border-zinc-700">Python </span>
+                <span class="px-3 py-1 bg-zinc-800 rounded-full text-xs border border-zinc-700">EnergyPlus </span>
+                <span class="px-3 py-1 bg-zinc-800 rounded-full text-xs border border-zinc-700">AnyLogic </span>
+                <span class="px-3 py-1 bg-zinc-800 rounded-full text-xs border border-zinc-700">Arduino & Raspberry Pi </span>
+                <span class="px-3 py-1 bg-zinc-800 rounded-full text-xs border border-zinc-700">BIM (Revit/ArchiCAD) </span>
+            </div>
+        </section>
+		<section id="publications" class="mb-20">
+    <h3 class="text-2xl font-bold text-white mb-8">Selected Publications & Research</h3>
+    
+    <div class="flex space-x-4 mb-8">
+        <button onclick="filterPubs('all')" class="pub-filter active text-xs font-bold uppercase tracking-widest text-orange-500 border-b-2 border-orange-500 pb-1">All</button>
+        <button onclick="filterPubs('journal')" class="pub-filter text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-orange-500 transition pb-1">Journals</button>
+        <button onclick="filterPubs('conference')" class="pub-filter text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-orange-500 transition pb-1">Conferences</button>
+    </div>
+
+    <div class="space-y-6" id="pub-container">
+        <div class="pub-item p-6 bg-zinc-900/50 border border-zinc-800 rounded-lg transition-all duration-300" data-category="journal">
+            <span class="text-[10px] font-bold text-orange-500 uppercase px-2 py-0.5 border border-orange-500/30 rounded">Scopus Indexed Journal</span>
+            <h4 class="text-white font-medium mt-3">Evaluating the dynamics of occupancy heat gains in a mid-sized airport terminal through agent-based modelling</h4>
+            <p class="text-sm text-slate-400 mt-2">K. Sinha, N. Ali, E. Rajasekar | <strong>Building and Environment</strong> (2021)</p>
+            <a href="https://doi.org/10.1016/j.buildenv.2021.108147" target="_blank" class="text-xs text-orange-500 mt-3 inline-block hover:underline">View Publication →</a>
         </div>
-    </section>
 
+        <div class="pub-item p-6 bg-zinc-900/50 border border-zinc-800 rounded-lg transition-all duration-300" data-category="journal">
+            <span class="text-[10px] font-bold text-orange-500 uppercase px-2 py-0.5 border border-orange-500/30 rounded">Scopus Indexed Journal</span>
+            <h4 class="text-white font-medium mt-3">Functional efficiency in airport terminals: A review on Overall and Stratified Service Quality</h4>
+            <p class="text-sm text-slate-400 mt-2">A. Thampan, K. Sinha, B.R. Gurjar, E. Rajasekar | <strong>Journal of Air Transport Management</strong> (2020)</p>
+            <a href="https://doi.org/10.1016/j.jairtraman.2020.101837" target="_blank" class="text-xs text-orange-500 mt-3 inline-block hover:underline">View Publication →</a>
+        </div>
+
+        <div class="pub-item p-6 bg-zinc-900/50 border border-zinc-800 rounded-lg transition-all duration-300" data-category="conference">
+            <span class="text-[10px] font-bold text-slate-500 uppercase px-2 py-0.5 border border-zinc-700 rounded">International Conference</span>
+            <h4 class="text-white font-medium mt-3">An Agent-based dynamic occupancy schedule model for prediction of HVAC energy demand</h4>
+            <p class="text-sm text-slate-400 mt-2">K. Sinha, N. Ali, E. Rajasekar | <strong>IBPSA Rome</strong> (2019)</p>
+            <a href="http://www.ibpsa.org/proceedings/BS2019/BS2019_211133.pdf" target="_blank" class="text-xs text-orange-500 mt-3 inline-block hover:underline">View Proceedings →</a>
+        </div>
+    </div>
+</section>
+
+<script>
+function filterPubs(category) {
+    const items = document.querySelectorAll('.pub-item');
+    const filters = document.querySelectorAll('.pub-filter');
+    
+    // Update active button styles
+    filters.forEach(f => {
+        f.classList.remove('text-orange-500', 'border-orange-500', 'border-b-2');
+        f.classList.add('text-slate-500');
+    });
+    event.currentTarget.classList.add('text-orange-500', 'border-orange-500', 'border-b-2');
+    event.currentTarget.classList.remove('text-slate-500');
+
+    // Filter items
+    items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+            item.style.display = 'block';
+            setTimeout(() => { item.style.opacity = '1'; }, 10);
+        } else {
+            item.style.opacity = '0';
+            setTimeout(() => { item.style.display = 'none'; }, 300);
+        }
+    });
+}
+</script>
+		
+
+    </main>
 </body>
 </html>
