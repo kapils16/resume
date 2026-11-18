@@ -155,9 +155,15 @@ const RESUME_DATA = {
         {
             label: "CURRENT STATUS",
             title: "Assistant Professor",
-            organization: "Chandigarh University, University Institute of Architecture",
-            location: "Chandigarh",
-            period: "July 2024 - Present",
+            organization: "Department of Architecture and Planning, Visvesvaraya National Institute of Technology Nagpur",
+            location: "Nagpur",
+            period: "November 2026 - Present",
+            highlights: []
+        },
+        {
+            title: "Assistant Professor",
+            organization: "University Institute of Architecture, Chandigarh University Mohali",
+            period: "July 2024 - October 2026",
             highlights: []
         },
         {
